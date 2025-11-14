@@ -1,4 +1,4 @@
-# LLM Router (Created with Claude. Thanks Claude)
+# Ollama LLM Router (Created with Claude. Thanks Claude)
 
 An intelligent router for Ollama models that automatically directs prompts to the appropriate model based on task type.
 
