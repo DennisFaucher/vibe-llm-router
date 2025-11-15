@@ -1,12 +1,13 @@
 # Ollama LLM Router (Created with Claude. Thanks Claude)
 
 An intelligent router for Ollama models that automatically directs prompts to the appropriate model based on task type.
+I created this, with help, as all the examples I found out there either did not work, or were not what I wanted. Enjoy.
 
 ## Features
 
 - **Automatic Task Classification**: Analyzes input prompts to determine task type
 - **Smart Routing**: 
-  - Routes summarization tasks to `gpot-oss`
+  - Routes summarization tasks to `gpt-oss`
   - Routes coding tasks to `qwen2.5-coder`
 - **Streaming Support**: Real-time response streaming
 - **CLI Interface**: Easy-to-use command-line tool
@@ -16,7 +17,7 @@ An intelligent router for Ollama models that automatically directs prompts to th
 1. **Ollama** must be installed and running
 2. Pull the required models:
 ```bash
-   ollama pull gpot-oss
+   ollama pull gpt-oss
    ollama pull qwen2.5-coder
 ```
 
@@ -98,7 +99,7 @@ llm-router/
 
 The router defaults to:
 - Ollama host: `http://localhost:11434`
-- Summarization model: `gpot-oss`
+- Summarization model: `gpt-oss`
 - Coding model: `qwen2.5-coder`
 
 You can modify these in the `LLMRouter` class if needed.
